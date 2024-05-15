@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| Proyecto Superacción |</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+        body {
+            font-family: 'Quicksand';
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            background: linear-gradient(270deg, #f261ff, #44a3de, #f1a7a0, #ff6f61, #f1a7a0, #44a3de);
+            background-size: 600% 600%;
+            animation: gradientAnimation 20s ease infinite;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            background-image: url(Images/doodletransparent_bg.jpg);
+            background-size: cover;
+            background-position: 100%;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1rem;
+            display: block;
+            transition: background-color 0.25s ease, border-radius 0.25s ease;
+        }
+        nav a:hover {
+            background-color: #ffffff6f;
+            backdrop-filter: blur(5px);
+            border-radius: 1.2rem;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 2rem;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 1rem;
+            padding: 2rem;
+            flex: 1;
+            min-width: 250px;
+            max-width: 300px;
+        }s
+        .card h2 {
+            margin-top: 0;
+            font-size: 1.5rem;
+            color: #ff6f61;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 3.5rem;
+            }
+            .card {
+                max-width: 100%;
+            }
+        }
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Proyecto Superacción</h1>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+    </nav>
+    <div class="container">
+
+        <div class="card">
+            <h2></h2>
+            <p><b>Como seccionar correctamente los alimentos en la refrigeradora: </b></p>
+        </div>
+
+        <div class="card">
+            <h2>Sección 1</h2>
+            <p>Lacteos</p>
+        </div>
+        <div class="card">
+            <h2>Sección 2</h2>
+            <p>Carnes</p>
+        </div>
+        <div class="card">
+            <h2>Sección 3</h2>
+            <p>Frutas</p>
+        </div>
+        <div class="card">
+            <h2>Sección 4</h2>
+            <p>Verduras</p>
+        </div>
+        <div class="card">
+            <h2>Sección 5</h2>
+            <p>Congelados</p>
+        </div>
+    </div>
+    <div class="card">
+        <p>Es importante saber como se guarda correctamente la comida para evitar su descomposición y el desperdicio.</p>
+    </div>
+    <footer>
+        <p>&copy; 2024 Superacción Grupo 3. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
